@@ -1,0 +1,5 @@
+iptables -I FORWARD 1 -i wlan0 -o eth0 -j ACCEPT
+iptables -I FORWARD 2 -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -t nat -I POSTROUTING 1 -o eth0 -j MASQUERADE
+iptables -I INPUT 1 -p tcp --dport 2222 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 22 -j ACCEPT

@@ -1,0 +1,8 @@
+
+config zerotier 'global'
+	option enabled '1'
+	option secret 'YOUR_ZEROTIER_SECRET_KEY'
+
+config network 'YOUR_NETWORK_ID'
+	option id 'YOUR_ZEROTIER_NETWORK_ID'
+

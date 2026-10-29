@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":1,"method":"call","params":["a4bb599d40c843db3b8a587ddb4a91bb","uci","set",{"config":"dhcp","section":"cfg01411c","values":{"server":["223.5.5.5","119.29.29.29"]}}]}

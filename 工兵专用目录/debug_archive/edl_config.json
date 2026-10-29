@@ -1,0 +1,1 @@
+{"supported_functions": ["program", "read", "nop", "patch", "configure", "setbootablestoragedrive", "erase", "power", "firmwarewrite", "getstorageinfo", "benchmark", "emmc", "ufs", "fixgpt", "getsha256digest"], "programmer": "/mnt/sda3/v50_flash_tools/edl_tools/loaders/000a50e100310000_e746e34f737403f4_fhprg_lg_g8x.bin", "serial": 93005426}

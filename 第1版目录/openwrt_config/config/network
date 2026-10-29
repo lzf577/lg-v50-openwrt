@@ -1,0 +1,65 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fd9a:1090:33b7::/48'
+
+config device
+	option name 'usb0'
+	option macaddr '42:2d:20:5e:45:01'
+
+config device
+	option name 'rndis0'
+	option macaddr '42:2d:20:5e:45:01'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	option bridge_empty '1'
+	option multicast_to_unicast '0'
+	option macaddr '42:2d:20:5e:45:01'
+	list ports 'usb0'
+	list ports 'rndis0'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	option netmask '255.255.255.0'
+	option ipaddr '192.168.88.1'
+	option ip6assign '64'
+
+config device
+	option name 'wlan-sta'
+	option macaddr '00:0a:f5:63:34:bb'
+
+config interface 'wan'
+	option device 'eth0'
+	option proto 'dhcp'
+	option metric '10'
+
+config interface 'wwan'
+	option device 'wlan-sta'
+	option proto 'dhcp'
+	option metric '20'
+
+config interface 'wwan2'
+	option proto 'dhcp'
+	option metric '20'
+
+config interface 'wan6'
+	option proto 'dhcpv6'
+	option device '@wan'
+	option reqaddress 'try'
+	option reqprefix 'auto'
+	option sourcefilter '0'
+
+config interface 'wan6_wwan'
+	option proto 'dhcpv6'
+	option device '@wwan2'
+	option reqaddress 'try'
+	option reqprefix 'auto'
+	option sourcefilter '0'

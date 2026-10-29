@@ -1,0 +1,1 @@
+{"supported_functions": ["program", "configure", "nop", "firmwarewrite", "patch", "setbootablestoragedrive", "ufs", "emmc", "power", "benchmark", "read", "getstorageinfo", "getsha256digest", "erase", "peek", "poke"], "programmer": "/mnt/sda3/ledev30/edl_tools/prog_ufs_firehose_8998_lgev30.elf", "serial": 2292755708}

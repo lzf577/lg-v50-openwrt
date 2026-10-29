@@ -1,0 +1,29 @@
+# 排除 20GB 全量固件 Dump 与备份
+v50_backup/
+
+# 排除解压后的 boot/ramdisk 文件系统测试目录
+extracted_v50_boot/
+
+# 排除超过 50MB 的独立大镜像与安装包（建议通过 GitHub Releases 附件发布）
+magisk_boot_a.img
+Magisk-v30.7.apk
+*.img
+*.tar.gz
+*.apk
+*.simg
+
+# 排除第三方已包含子仓库的 EDL 工具克隆目录（保留 loaders 目录与 firehose elf）
+edl_tools/edl/
+
+# 排除本地测试工具与临时文件
+chk/
+
+# 本地备份及编辑器临时文件
+*.bak
+*.bak_*
+*.local.bak
+*.old
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
