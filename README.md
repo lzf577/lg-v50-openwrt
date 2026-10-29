@@ -34,11 +34,6 @@
 | ├── [`autostart_scripts/`](./第1版目录/autostart_scripts/) | 开机接管与自愈脚本 (`99-openwrt-takeover.sh`, `wan_watchdog.sh`, `dnsmasq-v50.conf`) |
 | ├── [`openwrt_config/`](./第1版目录/openwrt_config/) | OpenWrt `/etc/config/` 标准配置模板（网络、无线、防火墙、OpenClash、ZeroTier） |
 | └── [`wifi_hardware_assets/`](./第1版目录/wifi_hardware_assets/) | 高通 WCN3998 射频天线与校准资产数据 |
-| [**`副指挥专用目录/`**](./副指挥专用目录/) | **操作流程与架构规范** |
-| └── [`LGV50OpenWrt接管操作流程(定稿).md`](./副指挥专用目录/LGV50OpenWrt接管操作流程(定稿).md) | 接管操作步骤、依赖条件与故障排查定稿指南 |
-| [**`工兵专用目录/`**](./工兵专用目录/) | **战役研发全记录**：收录阶段 0 至阶段 11 完整的实操排错与阶段成果验收记录 |
-| [**`edl_tools/`**](./edl_tools/) | 高通 9008 (EDL) 底层救砖与刷机工具，含 LG 专用 Firehose Loader |
-| [**`v50_assets/`**](./v50_assets/) | 提取的底层内核模块与高通固件资产 |
 
 ---
 
