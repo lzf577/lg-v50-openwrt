@@ -1,1 +1,0 @@
-{"jsonrpc":"2.0","id":1,"method":"call","params":["1056433ae0d889224080d033a3754bcd","file","exec",{"command":"/sbin/ip","params":["route"]}]}

@@ -1,1 +1,0 @@
-{"jsonrpc":"2.0","id":1,"method":"call","params":["a4bb599d40c843db3b8a587ddb4a91bb","file","write",{"path":"/etc/dnsmasq-v50.conf","data":"interface=wlan0\ndhcp-range=192.168.10.100,192.168.10.200,12h\ndhcp-option=3,192.168.10.1\ndhcp-option=6,223.5.5.5,119.29.29.29\nserver=223.5.5.5\nserver=119.29.29.29\n"}]}

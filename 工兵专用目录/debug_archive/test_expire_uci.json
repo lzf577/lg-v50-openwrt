@@ -1,1 +1,0 @@
-{"jsonrpc":"2.0","id":1,"method":"call","params":["95f8f58e7d8dc58b1a32bf0fa909ac58","uci","get",{"config":"luci"}]}
